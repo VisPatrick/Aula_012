@@ -19,7 +19,7 @@ try:
     for arquivo in lista_arquivos:
         print(f'Carregando o arquivo {arquivo}... ')
 
-# #       PANDAS # 49s
+# #       PANDAS # 5:33s
         df = pd.read_csv(ENDERECO_DADOS + arquivo, sep=';', encoding='iso-8859-1')
         if df_bolsa_familia is None:
             df_bolsa_familia = df
